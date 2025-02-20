@@ -1,0 +1,41 @@
+{
+  "env": {
+    "es6": true,
+    "jest": true,
+    "node": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "prettier", "chai-friendly", "import"],
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true,
+        "project": "./tsconfig.json"
+      }
+    }
+  },
+  "overrides": [
+    {
+      "files": ["*.ts"],
+      "extends": [
+        "airbnb-base",
+        "prettier",
+        "airbnb-typescript/base",
+        "plugin:chai-friendly/recommended",
+        "plugin:import/typescript",
+        "plugin:import/recommended",
+        "plugin:prettier/recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended"
+      ],
+      "parserOptions": {
+        "parser": "@typescript-eslint/parser",
+        "project": "tsconfig.json",
+        "sourceType": "module"
+      }
+    }
+  ]
+}
