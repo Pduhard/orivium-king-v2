@@ -20,3 +20,45 @@ This project contains the smart contracts for the Orivium King V2. It implements
 - [Hardhat](https://hardhat.org/)
 - [Foundry](https://book.getfoundry.sh/)
 
+## Usage 💡
+
+### Compile Contracts 🛠️
+
+To compile the smart contracts, run:
+```sh
+forge build
+```
+
+### Run Tests ✅
+
+To run the tests, use:
+```sh
+forge test
+```
+
+### Start Local Node 🌐
+
+To start a local Hardhat node, run:
+```sh
+yarn start:local
+```
+
+### Generate Typechain Types 📜
+
+To generate Typechain types, use:
+```sh
+yarn typechain
+```
+
+## Tasks 🔧
+
+Before using tasks, make sure to generate Typechain types:
+```sh
+yarn typechain
+```
+
+To get the available tasks run
+
+```sh
+npx hardhat --help
+```
